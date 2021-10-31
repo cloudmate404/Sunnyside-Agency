@@ -1,3 +1,298 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+
+/* ================
+    Typography
+    =============*/
+
+
+h1,h2,h3,h4, .learn{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
     
+}
+
+h3{
+    font-size: 2rem;
+    color: #24303E;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    
+}
+
+nav li{
+    padding: ;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+.main-nav a{
+   color: #808397;
+   letter-spacing: -0.14px;
+}
+
+
+.main-nav{
+    font-size: 1.25rem;
+    color: #808397;
+    
+    
+}
+
+.main-header{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6.25px;
+}
+
+.third-cube h3, .fourth-cube h3 {
+    font-size: 1.75rem;
+    color: #24554A;
+
+}
+
+.cube p{
+    font-size: 1.125rem;
+    color: #808397;
+}
+
+.third-cube p, .fourth-cube p{
+    font-size: 1rem;
+    color: #24554A;
+}
+
+
+.client-testimonials h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: #A7AAAD;
+}
+
+.testimonial img{
+    border-radius: 50%;
+}
+
+.testimonial p{
+    font-size: 1.125rem;
+    color: #5B636D;
+}
+
+.client-name{
+    font-size: 1.125rem;
+    color: #24303E ;
+}
+
+.client-job{
+    font-size: 0.875rem ;
+    color: #A7AAAD;
+}
+
+.footer-nav li{
+    font-size: 1.125rem;
+    color: #458D7E;
+
+}
+
+.learn{
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+
+
+
+/*==========
+    Layout
+==========*/
+
+.logo-menu{
+    display: flex;
+    padding: 2em 0;
+    width: 100%;
+    justify-content: space-between;
+    
+  
+}
+
+.logo-menu img{
+    margin: 0 2em;
+}
+
+.main-nav{
+    background-color: #FFFCF8 ;
+    padding: 2em;
+    max-width: 100%;
+    margin: auto 2rem;
+    display: none;
+}
+
+.main-nav ul{
+    margin: 0;
+}
+
+.main-nav li{
+    margin: 1em auto;
+}
+
+.top{
+    background-image: url('../images/desktop/image-header.jpg');
+    max-width: 100%;
+    height: 90vh;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.main-header{
+    margin-bottom: 1.4em;
+}
+
+
+.cube{
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.cube h3{
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+}
+.cube p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.learn{
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+
+.third-cube{
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    height: 100vh;
+    margin-bottom: 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.fourth-cube{
+    margin-top: 0;
+    background-image: url('../images/desktop/image-photography.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.fourth-cube h3, .third-cube h3{
+    margin-bottom: 1em;
+}
+
+.fourth-cube div, .third-cube div{
+    margin-bottom: 2.286em;
+    align-self: flex-end;
+    max-width: 90%;
+    margin-right: auto ;
+    margin-left: auto;
+}
+
+.fourth-cube, .third-cube{
+    display: flex;
+
+}
+
+.client-testimonials{
+    margin: 4em auto 8em auto;
+    text-align: center;
+    max-width: 80%;
+    
+}
+
+.testimonial{
+    margin: 4em auto;
+}
+.client-img{
+    width: 20%;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.client-testimonials h3{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.client-name{
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.client-job{
+    margin-top: 0.5625em;
+    margin-bottom: 0;
+    letter-spacing: -0.1px;
+}
+
+.testimonial p{
+    letter-spacing: -0.13px;
+}
+
+.footer-imgs img{
+    max-width: 50vw;
+   
+   
+}
+
+.footer-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer{
+    background-color: #90D4C6;
+    padding: 4em 0;
+}
+
+.footer-logo{
+    margin: 0 auto 3em;
+}
+
+.footer-nav{
+    padding: 0;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: space-around;
+    max-width: 50%;
+    margin: 3em auto;
 }
