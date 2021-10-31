@@ -2,13 +2,21 @@
 
 
 const menuBtn = document.querySelector('.menu')
-const menu = document.querySelector('.main-nav')
+const mainNav = document.querySelector('.main-nav')
+const closeMenu = document.querySelector('.closeMenu')
 
 function menuDisplay(){
-    if(menu.style.display === 'block'){
-        menu.style.display ==='none'
-    } else{
-        menu.style.display === 'block'
-    }
+   mainNav.style.display ='flex'
+   menuBtn.style.display ='none'
+   closeMenu.style.display = 'flex'
 }
+
+function close(){
+    mainNav.style.display = 'none'
+    menuBtn.style.display ='flex'
+    closeMenu.style.display = 'none'
+}
+
 menuBtn.addEventListener('click', menuDisplay )
+
+closeMenu.addEventListener('click', close)
